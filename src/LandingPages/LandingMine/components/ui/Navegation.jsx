@@ -193,7 +193,7 @@ const Navegation = () => {
 
                     onClick={toggleMenu}
                 >
-                    <MobileMenu className="absolute z-10 w-16 h-auto text-black cursor-pointer dark:text-white top-5 left-5 "
+                    <MobileMenu className="absolute z-10 w-16 h-auto text-white cursor-pointer top-5 left-5 "
                     />
                 </div>
             )}
