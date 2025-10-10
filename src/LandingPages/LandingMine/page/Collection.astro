@@ -1,0 +1,74 @@
+---
+import Navegation from "../components/ui/Navegation";
+import CollectionLandingXS from "../layout/CollectionLandingXS.astro";
+import CollectionLandingLG from "../layout/CollectionLandingLG.astro";
+import CollectionLanding2xl from "../layout/CollectionLanding2xl.astro";
+import "../../../styles/index.css";
+---
+
+
+<div class="flex flex-row min-h-dvh">
+  <Navegation client:load />
+  <div class="flex flex-col w-full max-w-[100rem] m-auto">
+    <div class="relative w-full h-auto">
+      <div
+        class="absolute inset-0 w-full h-auto bg-center bg-cover"
+        style={{
+          backgroundImage: `url(/Image/LandingMine/LandingMineB.webp)`,
+        }}
+      >
+        <div
+          class="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full h-full bg-black/60"
+        >
+        </div>
+      </div>
+
+      <div
+        class="relative flex flex-col items-center justify-center h-full gap-6 p-4 text-white"
+      >
+        <div
+          class="m-auto grid grid-cols-1 justify-center items-center w-full max-w-[100rem]"
+        >
+          <img
+            src="/Image/LandingMine/LandingMine.webp"
+            alt="LandingMine"
+            class="object-contain h-auto m-auto w-28 md:w-40"
+          />
+       
+        <h1
+          class="text-center w-full mt-4 text-2xl font-bold md:max-w-[40rem] md:mx-auto text-white"
+        >
+          Diseños que inspiran. Código que impresiona. 
+        </h1>
+
+         <h1
+          class="text-center w-full mt-2 text-lg md:max-w-[40rem] md:mx-auto text-white"
+        >
+          Explora una colección de
+          landing pages, pensadas para destacar
+          en cualquier sector.
+        </h1>
+         </div>
+      </div>
+    </div>
+
+    <main class="flex-grow p-4 w-full max-w-[100rem]">
+      {" "}
+      <section class="items-center block lg:hidden">
+  
+        <CollectionLandingXS />
+  
+      </section>
+
+      <section class="items-center hidden lg:block 2xl:hidden">
+  
+        <CollectionLandingLG />
+      </section>
+
+       <section class="items-center hidden 2xl:block 2xl">
+  
+        <CollectionLanding2xl />
+      </section>
+    </main>
+  </div>
+</div>

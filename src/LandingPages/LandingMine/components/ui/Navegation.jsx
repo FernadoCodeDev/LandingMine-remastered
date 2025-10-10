@@ -93,7 +93,7 @@ const Navegation = () => {
                                 <Collection className="w-4 h-4 text-white" />
 
                                 <a
-                                    href="/Collection"
+                                    href="/collection"
                                     className="text-base md:text-lg "
                                 >
                                     Colección
