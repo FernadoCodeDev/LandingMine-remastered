@@ -1,0 +1,127 @@
+---
+import Navegation from "../components/ui/Navegation";
+import GitHubButton from "../components/ui/GitHubButton.astro";
+import PersonalPageButton from "../components/ui/PersonalPageButton.astro";
+import "../../../styles/index.css";
+---
+
+<div class="flex flex-row min-h-dvh">
+  <Navegation client:load />
+  <div class="flex flex-col w-full max-w-[100rem] mx-auto">
+    <div class="relative w-full h-auto">
+      <div
+        class="absolute inset-0 w-full h-auto bg-center bg-cover"
+        style={{
+          backgroundImage: `url(/Image/LandingMine/LandingMineB.webp)`,
+        }}
+      >
+        <div
+          class="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full h-full bg-black/60"
+        >
+        </div>
+      </div>
+
+      <div
+        class="relative flex flex-col items-center justify-center h-full gap-6 p-4 text-white"
+      >
+        <div
+          class="m-auto grid grid-cols-1 justify-center items-center w-full max-w-[100rem]"
+        >
+          <img
+            src="/Image/LandingMine/LandingMine.webp"
+            alt="LandingMine"
+            class="object-contain h-auto m-auto w-28 md:w-40"
+          />
+
+          <h1
+            class="text-center w-full mt-4 text-2xl font-bold md:max-w-[40rem] md:mx-auto text-white"
+          >
+            Diseños que inspiran. Código que impresiona.
+          </h1>
+
+          <h1
+            class="text-center w-full mt-2 text-lg md:max-w-[40rem] md:mx-auto text-white"
+          >
+            Explora una colección de landing pages, pensadas para destacar en
+            cualquier sector.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <main class="flex-grow p-4 w-full max-w-[100rem]">
+      {" "}
+      <section
+        class="grid items-center grid-cols-1 grid-rows-2 gap-4 lg:grid-cols-2"
+      >
+        <div
+          class="flex flex-col items-center justify-center h-full gap-4 p-4 bg-slate-200 dark:bg-neutral-950 rounded-xl"
+        >
+          <p class="text-base">
+            <span class="font-bold">LandingMine </span> es una colección de <span
+              class="font-bold"
+              >19 landing pages temáticas,
+            </span>
+            diseñadas para mostrar la versatilidad del diseño web moderno aplicado
+            a distintos tipos de negocio.
+          </p>
+          <p class="text-base">
+            Cada página fue creada con un enfoque funcional y estético,
+            combinando <span class="font-bold"
+              >interfaces limpias, diseño responsive
+            </span> y experiencias pensadas para el usuario final.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center h-full row-span-2 gap-4 p-4 bg-slate-200 dark:bg-neutral-950 rounded-xl"
+        >
+          <p class="text-base">
+            Más que un simple catálogo visual, LandingMine nace como una
+            propuesta para reclutadores, empresas o clientes que buscan evaluar
+            ejemplos reales de diseño y desarrollo profesional aplicados a
+            contextos diversos: desde tiendas en línea y portafolios, hasta
+            plataformas tecnológicas y servicios creativos.
+          </p>
+          <p class="text-base">
+            Algunas de las landing pages fueron desarrolladas como parte de
+            pruebas técnicas específicas, con objetivos reales de
+            funcionalidad:
+          </p>
+          <ul>
+            <li>
+              <span class="font-bold">Cooktopia</span>, inspirada en la
+              experiencia de WooCommerce, simula una tienda en línea
+              completamente administrable.
+            </li>
+            <li>
+              <span class="font-bold">StarIA</span>, enfocada en la creación de
+              una interfaz visual e interactiva para configurar agentes de
+              inteligencia artificial conversacional.
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center h-full gap-4 p-4 bg-slate-200 dark:bg-neutral-950 rounded-xl"
+        >
+          <p class="text-base">
+            Estas experiencias aportan valor adicional al catálogo, demostrando
+            cómo una landing puede evolucionar hacia un <span class="font-bold"
+              >prototipo funcional o una aplicación real.
+            </span>
+          </p>
+          <p class="text-base">
+            En conjunto, <span class="font-bold">LandingMine</span> busca representar
+            una visión moderna del desarrollo web: <span class="font-bold"
+              >creativa, adaptable y orientada a resultados.</span
+            >
+          </p>
+        </div>
+
+        <GitHubButton />
+        <PersonalPageButton />
+      </section>
+    </main>
+  </div>
+</div>

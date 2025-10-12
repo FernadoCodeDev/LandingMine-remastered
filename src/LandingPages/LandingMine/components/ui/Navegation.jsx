@@ -81,33 +81,33 @@ const Navegation = () => {
                             </div>
                         </div>
                         <div className="flex flex-col justify-between m-2 ">
-                            <div className="flex flex-row items-center gap-2 p-2 rounded hover:bg-neutral-800">
-                                <Home className="w-4 h-4 text-white" />
 
-                                <a href="/" className="text-base md:text-lg">
+                            <a href="/" className="w-full text-base md:text-lg">
+
+                                <button className="flex flex-row items-center w-full gap-2 p-2 rounded hover:bg-neutral-800">
+                                    <Home className="w-4 h-4 text-white" />
+
                                     Inicio
-                                </a>
-                            </div>
+                                </button>
+                            </a>
 
-                            <div className="flex flex-row items-center gap-2 p-2 rounded hover:bg-neutral-800">
-                                <Collection className="w-4 h-4 text-white" />
+                            <a href="/collection" className="w-full text-base md:text-lg">
 
-                                <a
-                                    href="/collection"
-                                    className="text-base md:text-lg "
-                                >
-                                    Colección
-                                </a>
-                            </div>
+                                <button className="flex flex-row items-center w-full gap-2 p-2 rounded hover:bg-neutral-800">
+                                    <Collection className="w-4 h-4 text-white" />
 
-                            <div className="flex flex-row items-center gap-2 p-2 rounded hover:bg-neutral-800">
-                                <Pick className="w-4 h-4 text-white" />
+                                    Coleción
+                                </button>
+                            </a>
 
-                                <a href="/About" className="text-base md:text-lg ">
-                                    Sobre LandingMine
-                                </a>
-                            </div>
+                            <a href="/about" className="text-base md:text-lg">
 
+                                <button className="flex flex-row items-center w-full gap-2 p-2 rounded hover:bg-neutral-800">
+                                    <Pick className="w-4 h-4 text-white" />
+
+                                     Sobre LandingMine
+                                </button>
+                            </a>
 
                         </div>
                     </nav>
@@ -131,44 +131,43 @@ const Navegation = () => {
                 <nav className="flex flex-col justify-between w-64 h-auto text-white bg-neutral-950">
                     <div className="">
 
-                    <div className="flex flex-row items-center m-5">
-                        <div
-                            onClick={() => setDarkMode(!darkMode)}
-                        >
-                            <DarkMode className="object-contain w-20 h-auto text-white cursor-pointer" />
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col justify-between m-2 ">
-                        <div className="flex flex-row items-center gap-2 p-2 rounded hover:bg-neutral-800">
-                            <Home className="w-4 h-4 text-white" />
-
-                            <a href="/" className="text-base md:text-lg">
-                                Inicio
-                            </a>
-                        </div>
-
-                        <div className="flex flex-row items-center gap-2 p-2 rounded hover:bg-neutral-800">
-                            <Collection className="w-4 h-4 text-white" />
-
-                            <a
-                                href="/Collection"
-                                className="text-base md:text-lg "
+                        <div className="flex flex-row items-center m-5">
+                            <div
+                                onClick={() => setDarkMode(!darkMode)}
                             >
-                                Colección
-                            </a>
+                                <DarkMode className="object-contain w-20 h-auto text-white cursor-pointer" />
+                            </div>
                         </div>
 
-                        <div className="flex flex-row items-center gap-2 p-2 rounded hover:bg-neutral-800">
-                            <Pick className="w-4 h-4 text-white" />
+                        <div className="flex flex-col justify-between m-2 ">
+                            <a href="/" className="text-base md:text-lg">
 
-                            <a href="/About" className="text-base md:text-lg ">
-                                Sobre LandingMine
+                                <button className="flex flex-row items-center w-full gap-2 p-2 rounded hover:bg-neutral-800">
+                                    <Home className="w-4 h-4 text-white" />
+
+                                    Inicio
+                                </button>
                             </a>
+
+                            <a href="/collection" className="text-base md:text-lg">
+
+                                <button className="flex flex-row items-center w-full gap-2 p-2 rounded hover:bg-neutral-800">
+                                    <Collection className="w-4 h-4 text-white" />
+
+                                    Coleción
+                                </button>
+                            </a>
+
+                            <a href="/about" className="text-base md:text-lg">
+
+                                <button className="flex flex-row items-center w-full gap-2 p-2 rounded hover:bg-neutral-800">
+                                    <Pick className="w-4 h-4 text-white" />
+
+                                    Sobre LandingMine
+                                </button>
+                            </a>
+
                         </div>
-
-
-                    </div>
 
                     </div>
 
