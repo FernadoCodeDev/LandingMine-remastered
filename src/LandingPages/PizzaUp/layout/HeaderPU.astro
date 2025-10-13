@@ -27,7 +27,7 @@ import Car from "../assets/svg/Car";
   <img
     src="/Image/PizzaUp/PizzaUp.webp"
     alt="Img"
-    class="object-contain w-20 h-20 mx-auto md:w-28 md:h-28"
+    class="object-contain w-40 h-40 mx-auto dark:invert"
   />
 
   <div
@@ -48,39 +48,39 @@ import Car from "../assets/svg/Car";
 <!--MD -->
 
 <div class="items-center justify-center hidden grid-cols-3 p-4 md:grid">
-    <div
-      class="flex flex-row items-center justify-center gap-4 p-2 mx-auto text-center bg-red-500 rounded-xl"
-    >
-      <div class="">
-        <MobileMenu
-          textColor="text-white transition-all duration-900 ease-out"
-          hoverColor="hover:text-red-500"
-          bgColor="hover:bg-white transition-all duration-900 ease-out rounded-xl"
-          invertColor="text-white"
-          client:load
-        />
+  <div
+    class="flex flex-row items-center justify-center gap-4 p-2 mx-auto text-center bg-red-500 rounded-xl"
+  >
+    <div class="">
+      <MobileMenu
+        textColor="text-white transition-all duration-900 ease-out"
+        hoverColor="hover:text-red-500"
+        bgColor="hover:bg-white transition-all duration-900 ease-out rounded-xl"
+        invertColor="text-white"
+        client:load
+      />
+    </div>
+  </div>
+
+  <img
+    src="/Image/PizzaUp/PizzaUp.webp"
+    alt="Img"
+    class="object-contain w-40 h-40 mx-auto dark:invert"
+  />
+
+  <div
+    class="flex flex-row items-center justify-center gap-4 p-2 mx-auto text-center bg-red-500 rounded-xl"
+  >
+    <div class="relative object-contain w-12 h-12 text-white cursor-pointer">
+      <Car />
+
+      <div class="absolute w-6 h-6 ml-6 -mt-12 rounded-full bg-sky-600">
+        <p class="font-bold">0</p>
       </div>
     </div>
 
-    <img
-      src="/Image/PizzaUp/PizzaUp.webp"
-      alt="Img"
-      class="object-contain w-20 h-20 mx-auto md:w-28 md:h-28"
-    />
-
-    <div
-      class="flex flex-row items-center justify-center gap-4 p-2 mx-auto text-center bg-red-500 rounded-xl"
-    >
-      <div class="relative object-contain w-12 h-12 text-white cursor-pointer">
-        <Car />
-
-        <div class="absolute w-6 h-6 ml-6 -mt-12 rounded-full bg-sky-600">
-          <p class="font-bold">0</p>
-        </div>
-      </div>
-
-      <div class="">
-        <DarkMode bgColor="text-white" client:load />
-      </div>
+    <div class="">
+      <DarkMode bgColor="text-white" client:load />
     </div>
+  </div>
 </div>

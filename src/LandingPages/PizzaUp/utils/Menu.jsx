@@ -25,20 +25,22 @@ function Menu() {
         <div
           key={pizza.id}
           onClick={() => handleClick(pizza)}
-          className="flex flex-col h-full text-black transition duration-300 bg-white cursor-pointer dark:text-white dark:bg-neutral-800 hover:shadow-xl"
+          className="flex flex-col h-full text-black transition duration-300 cursor-pointer dark:text-white hover:shadow-xl"
         >
           <img
             src={pizza.image}
             alt={pizza.name}
-            className="w-full h-auto bg-yellow-100 dark:bg-neutral-700"
+            className="w-full h-auto p-2"
           />
-          <div className="flex flex-col gap-4 px-2 py-4">
+          <div className="flex flex-col gap-2 px-2 py-4">
             <h2 className="text-lg font-bold text-center sm:text-2xl">{pizza.name}</h2>
-            <div className="p-2 rounded-2xl bg-slate-300 dark:bg-neutral-600">
-              <h2 className="text-lg font-bold text-center sm:text-xl text-neutral-600 dark:text-slate-300">
-                ${pizza.price}
-              </h2>
-            </div>
+            <p className="text-lg text-center sm:text-xl">
+              {pizza.price}
+            </p>
+
+            <button className="p-2 font-bold text-white bg-red-500 rounded-xl">
+              Seleccionar opciones
+            </button>
           </div>
         </div>
       ))}
