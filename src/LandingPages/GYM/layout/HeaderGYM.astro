@@ -1,0 +1,37 @@
+---
+import MobileMenu from "../../GlobalComponents/MobileMenu";
+import DarkMode from "../../GlobalComponents/DarkMode";
+---
+
+<div class="w-full h-auto p-4 mb-4 shadow-lg bg-slate-200 dark:bg-slate-900">
+  <div
+    class="grid items-center justify-center w-full h-auto grid-cols-2 md:grid-cols-3"
+  >
+    <img
+      src="/Image/GYM/GYMLogo.webp"
+      alt="GymLogo"
+      class="object-contain w-40 h-40 mx-auto cursor-pointer"
+    />
+
+    <div
+      class="flex p-2 mx-auto text-center bg-yellow-500 h-fit w-fit rounded-xl md:order-3"
+    >
+      <DarkMode bgColor="text-slate-950" client:load />
+    </div>
+
+    <div
+      class="flex col-span-2 gap-4 p-2 mx-auto text-center bg-yellow-500 md:bg-transparent h-fit w-fit rounded-xl md:col-span-1 md:order-2"
+    >
+      <div class="">
+        <MobileMenu
+          textColor="text-slate-950 dark:md:text-white transition-all duration-900 ease-out"
+          hoverColor="hover:text-slate-950 md:hover:text-yellow-500 dark:md:hover:text-yellow-500"
+          bgColor="hover:bg-white md:hover:bg-transparent transition-all duration-900 ease-out rounded-xl"
+          invertColor="text-slate-950"
+          client:load
+        />
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,84 @@
+---
+import Vip from "../../assets/svg/Vip";
+import Nutrition from "../../assets/svg/Nutrition";
+import Shirt from "../../assets/svg/Shirt";
+import StateOfTheArtEquipment from "../../assets/svg/State-of-the-art equipment";
+import FirstMonthFree from "../../assets/svg/FirstMonthFree";
+import UnlimitedAccess from "../../assets/svg/UnlimitedAccess";
+import Lockers from "../../assets/svg/Lockers";
+import App from "../../assets/svg/App";
+---
+
+<div class="relative flex flex-col items-center justify-center">
+  <div
+    class="absolute inset-0 w-full h-auto bg-center bg-cover"
+    style={{
+      backgroundImage: `url(/Image/GYM/ImageGym3.webp)`,
+    }}
+  >
+    <div
+      class="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full h-full bg-black/60"
+    >
+    </div>
+  </div>
+
+  <dv
+    class="relative grid items-center justify-center grid-cols-2 gap-4 py-20 text-center text-white md:grid-cols-3 xl:grid-cols-4 xl:py-60"
+  >
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div>
+        <Vip class="object-contain" width="60" height="60" />
+      </div>
+
+      <h1 class="font-bold">Áreas VIP</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div>
+        <Nutrition class="object-contain" width="60" height="60" />
+      </div>
+
+      <h1 class="font-bold">Evaluación Nutricional</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div>
+        <StateOfTheArtEquipment class="object-contain" width="60" height="60" />
+      </div>
+
+      <h1 class="font-bold">Equipo de ultima generación</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div>
+        <FirstMonthFree class="object-contain" width="60" height="60" />
+      </div>
+
+      <h1 class="font-bold">Primer mes gratis</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div>
+        <UnlimitedAccess class="object-contain" width="60" height="60" />
+      </div>
+
+      <h1 class="font-bold">Acceso Ilimitado</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div>
+        <Lockers class="object-contain" width="60" height="60" />
+      </div>
+
+      <h1 class="font-bold">Lockers</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div>
+        <App class="object-contain" width="60" height="60" />
+      </div>
+
+      <h1 class="font-bold">APP</h1>
+    </div>
+  </dv>
+</div>

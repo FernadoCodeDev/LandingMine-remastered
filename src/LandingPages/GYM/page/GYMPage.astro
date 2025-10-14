@@ -1,0 +1,84 @@
+---
+import HeaderGYM from "../layout/HeaderGYM.astro";
+import Background from "../layout/Background.astro";
+import Benefits from "../components/ui/Benefits.astro";
+import Carousel from "../components/ui/Carousel";
+import FooterGYM from "../layout/FooterGYM.astro";
+---
+
+<div
+  class="flex flex-col min-h-screen text-slate-950 bg-slate-100 dark:text-white dark:bg-slate-950"
+>
+  <HeaderGYM />
+  <Background />
+
+  <main class="flex gap-4 w-full m-auto max-w-[80rem]">
+    <section class="">
+      <div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 max-w-[90rem]">
+        <div>
+          <img
+            src="/Image/GYM/ImageGym2.webp"
+            alt="ImageGym2"
+            class="w-full h-auto "
+          />
+        </div>
+
+        <div class="relative flex flex-col items-center justify-center gap-4">
+          <h1
+            class="absolute leading-none inset-0 font-mono font-bold text-center opacity-10 text-zinc-950 dark:text-zinc-50 text-[4rem] lg:text-[7rem] z-1 translate-y-6"
+          >
+            ¿QUIENES SOMOS?
+          </h1>
+
+          <h1 class="font-mono text-3xl font-bold text-start">
+            ¿QUIENES SOMOS?
+          </h1>
+
+          <p class="text-base md:text-lg">
+            En Gym creemos que, independientemente de la forma y el tamaño,
+            todos estamos en un viaje hacia nuestros mejores niveles personales
+            de salud y estado físico. Un viaje que nos hace mejores como
+            atletas, amigos y personas. Nuestras instalaciones son diferentes a
+            cualquier otro gimnasio en el que hayas estado antes.
+          </p>
+
+          <p class="text-base md:text-lg max-w-[50rem]">
+            Nos enorgullecemos no solo de brindar un entrenamiento de primera
+            clase, sino que también creemos en crear un entorno motivador y
+            dinámico. Somos la comunidad dedicada a tu evolución humana, un
+            entrenamiento a la vez. ¡Ven a una{" "}
+            <span class="font-bold dark:text-yellow-300"
+              >clase de prueba gratuita!</span
+            >{" "}
+            Pierde algo de grasa corporal, gana amigos y ponte en forma para toda
+            la vida.
+          </p>
+
+          <button
+            class="z-50 w-full p-2 m-auto font-bold text-black transition-all duration-700 ease-out bg-yellow-300 rounded-xl hover:bg-yellow-500"
+          >
+            MÁS INFORMACIÓN
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Benefits />
+
+  <section class="mt-4">
+    <div
+      class="flex flex-col justify-center w-full h-20 p-4 text-center bg-yellow-300 text-slate-950"
+    >
+      <h1 class="text-lg font-bold lg:text-2xl">
+        VIVE LA EXPERIENCIA DE FITNESS DEFINITIVA
+      </h1>
+    </div>
+
+    <div class="flex flex-col gap-4 w-full m-auto max-w-[80rem] justify-center p-4">
+      <Carousel client:load/>
+    </div>
+  </section>
+
+  <FooterGYM />
+</div>
