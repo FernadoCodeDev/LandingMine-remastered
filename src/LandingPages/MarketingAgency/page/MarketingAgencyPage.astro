@@ -1,0 +1,178 @@
+---
+import HeaderMA from "../layout/HeaderMA.astro";
+import FooterMA from "../layout/FooterMA.astro";
+import SEO from "../assets/svg/SEO";
+import SocialMedia from "../assets/svg/SocialMedia";
+import Email from "../assets/svg/Email";
+import PaidSearch from "../assets/svg/PaidSearch";
+import WebDesign from "../assets/svg/WebDesign";
+import Content from "../assets/svg/Content";
+import Customers from "../layout/Customers"
+---
+
+<div class="flex flex-col min-h-screen bg-slate-100 dark:bg-zinc-900">
+  <HeaderMA />
+
+  <main class="flex w-full gap-4">
+    <section class="w-full">
+      <div class="relative flex flex-col items-center justify-center w-full">
+        <div
+          class="absolute inset-0 w-full h-auto bg-center bg-cover"
+          style={{
+            backgroundImage: `url(/Image/MarketingAgency/BackgroundSection.webp)`,
+          }}
+        >
+        </div>
+
+        <dv
+          class="relative flex flex-col items-center w-full max-w-[80rem] m-auto justify-center gap-4 p-4 text-center text-white xl:py-60"
+        >
+          <h2 class="text-3xl font-bold md:text-5xl">
+            Diseño web en Orlando, Daytona Beach, Miami y Atlanta
+          </h2>
+          <div class="mt-4">
+            <p class="text-lg text-start md:text-xl">
+              Bienvenido a Marketing Agency. Como estudio de diseño web y
+              agencia de marketing digital con sede en Daytona Beach, Florida, y
+              con oficinas en Orlando, Miami y Atlanta, ayudamos a nuestros
+              clientes a lograr una presencia en línea única con clientes
+              potenciales, hermosas páginas web, redes sociales y más. Estamos
+              brindando resultados en Florida, el país y el mundo, así que
+              ¡descubra cómo podemos ayudarlo!
+            </p>
+            <button
+              class="flex px-6 py-2 mt-4 text-black transition-all rounded-full bg-slate-50 hover:bg-slate-300"
+            >
+              Inicie Hoy!
+            </button>
+          </div>
+
+          <div
+            class="grid grid-cols-2 lg:grid-cols-3 gap-4 m-auto w-full h-full max-w-[90rem] bg-neutral-700 backdrop-blur-md p-4 rounded-lg text-white"
+          >
+            <div class="bg-neutral-600">
+              <div
+                class="flex flex-row justify-start object-contain w-20 h-20 text-yellow-400 bg-neutral-800"
+              >
+                <SEO />
+              </div>
+              <h2 class="p-2 text-xl font-semibold">SEO</h2>
+              <p class="p-2 text-sm">
+                A través de SEO orgánico, anuncios pagados y búsqueda
+                geolocalizada, llega a los clientes de una manera completamente
+                nueva.
+              </p>
+            </div>
+
+            <div class="bg-neutral-600">
+              <div
+                class="flex flex-row justify-start object-contain w-20 h-20 p-2 text-yellow-400 bg-neutral-800"
+              >
+                <SocialMedia />
+              </div>
+              <h2 class="p-2 text-xl font-semibold">Social Media</h2>
+              <p class="p-2 text-sm">
+                Aumenta tu seguimiento en línea y envía mensajes y promociones
+                que sorprendan a tu audiencia.
+              </p>
+            </div>
+
+            <div class="bg-neutral-600">
+              <div
+                class="flex flex-row justify-start object-contain w-20 h-20 p-2 text-yellow-400 bg-neutral-800"
+              >
+                <Email />
+              </div>
+              <h2 class="p-2 text-xl font-semibold">Email</h2>
+              <p class="p-2 text-sm">
+                Llega a todos tus clientes de una vez con mensajes estratégicos
+                y creativamente diseñados por correo electrónico.{" "}
+              </p>
+            </div>
+
+            <div class="bg-neutral-600">
+              <div
+                class="flex flex-row justify-start object-contain w-20 h-20 p-2 text-yellow-400 bg-neutral-800"
+              >
+                <PaidSearch />
+              </div>
+              <h2 class="p-2 text-xl font-semibold">Paid Search</h2>
+              <p class="p-2 text-sm">
+                ¡Los clientes están buscando un negocio como el tuyo! Ayúdales a
+                encontrarte con anuncios de búsqueda pagados
+              </p>
+            </div>
+
+            <div class="bg-neutral-600">
+              <div
+                class="flex flex-row justify-start object-contain w-20 h-20 p-2 text-yellow-400 bg-neutral-800"
+              >
+                <WebDesign />
+              </div>
+              <h2 class="p-2 text-xl font-semibold">Presencia Web</h2>
+              <p class="p-2 text-sm">
+                Descubre nuestros hermosos sitios web generadores de prospectos
+                que convierten visitantes en clientes.
+              </p>
+            </div>
+
+            <div class="bg-neutral-600">
+              <div
+                class="flex flex-row justify-start object-contain w-20 h-20 p-2 text-yellow-400 bg-neutral-800"
+              >
+                <Content />
+              </div>
+              <h2 class="p-2 text-xl font-semibold">Contenido</h2>
+              <p class="p-2 text-sm">
+                Haz que tu voz única se escuche con la ayuda de contenido
+                personalizado y optimizado para buscadores.
+              </p>
+            </div>
+          </div>
+        </dv>
+      </div>
+
+      <div class="w-full h-auto pb-2 bg-gray-100">
+        <div
+          class="grid justify-center m-auto w-full max-w-[80rem] grid-cols-1 p-4 md:justify-between md:grid-cols-2 transition-all duration-1000 ease-in"
+        >
+          <div class="order-2 p-4 md:order-1">
+            <h1 class="text-xl font-bold md:text-2xl">Elegance Jewelry</h1>
+            <p class="text-base md:text-lg">
+              El objetivo de este proyecto era crear una presentación digital de
+              alto impacto para Elegance Jewelry, una tienda especializada en
+              joyería fina y exclusiva. El sitio web debía capturar la esencia
+              del lujo y la sofisticación de sus piezas, al mismo tiempo que
+              ofrecía una experiencia de usuario impecable para atraer clientes,
+              aumentar las ventas en línea y fortalecer la presencia de la marca
+              en el mercado.
+            </p>
+
+            <div class="flex flex-row justify-start gap-2 mt-4">
+              <button
+                class="p-2 transition-all duration-700 ease-out bg-yellow-300 border-2 border-yellow-400 rounded-full hover:border-yellow-500 hover:bg-yellow-400"
+              >
+                Explorar más
+              </button>
+              <button
+                class="p-2 transition-all duration-700 ease-out border-2 border-gray-600 rounded-full hover:bg-gray-200"
+              >
+                Ver nuestro trabajo
+              </button>
+            </div>
+          </div>
+
+          <div class="order-1 p-4 md:order-2">
+            <img src="/Image/MarketingAgency/laptop.webp"
+            alt="laptop" 
+            class="drop-shadow-2xl" />
+          </div>
+        </div>
+      </div>
+
+      <Customers client:load/>
+    </section>
+  </main>
+
+  <FooterMA />
+</div>
