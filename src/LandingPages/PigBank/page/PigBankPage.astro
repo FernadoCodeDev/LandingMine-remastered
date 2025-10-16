@@ -1,0 +1,106 @@
+---
+import HeaderPB from "../layout/HeaderPB.astro";
+import Background from "../layout/Background.astro";
+import FooterPB from "../layout/FooterPB.astro";
+import Authentication from "../assets/svg/Authentication";
+import SafetyEquipment from "../assets/svg/SafetyEquipment";
+import Accounts from "../assets/svg/Accounts";
+import SecurityFunds from "../assets/svg/SecurityFunds";
+import FeactureSection from "../layout/FeatureSection";
+import CarouseCard from "../components/ui/CarouseCard";
+---
+
+<div
+  class="flex flex-col min-h-screen text-zinc-950 dark:text-slate-100 bg-slate-100 dark:bg-zinc-950"
+>
+  <HeaderPB />
+  <Background />
+
+  <main class="flex gap-4 w-full m-auto max-w-[80rem]">
+    <section class="">
+      <div
+        class="flex flex-col items-center justify-center p-4 text-center md:cols-span-2"
+      >
+        <div>
+          <h1 class="text-2xl font-bold md:text-4xl">
+            La elección estratégica
+          </h1>
+          <p class="text-base md:text-xl">
+            Nuestra misión es brindar transparencia a las finanzas y mostrarle
+            todo de antemano.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="m-auto max-w-[80rem] grid grid-cols-1 p-4 gap-4 mt-5 md:grid-cols-3 justify-center text-center items-center"
+      >
+        <div
+          class="flex flex-col items-center justify-center gap-4 text-center"
+        >
+          <div class="w-20 h-20 p-2 rounded-full bg-rose-800 text-slate-100">
+            <Authentication />
+          </div>
+          <h1 class="text-2xl font-bold md:text-4xl">Autenticación</h1>
+          <p class="text-base md:text-1xl">
+            Tu cuenta está protegida mediante un proceso de autenticación
+          </p>
+
+          <div class="w-20 h-20 p-2 rounded-full bg-rose-800 text-slate-100">
+            <SafetyEquipment />
+          </div>
+          <h1 class="text-2xl font-bold md:text-4xl">Equipos de seguridad</h1>
+          <p class="text-base md:text-1xl">
+            Nuestro equipo de seguridad trabajan para mantener su dinero seguro
+          </p>
+        </div>
+
+        <div class="flex items-start justify-start w-full p-8">
+          <img
+            src="/Image/PigBank/CardPink.webp"
+            alt="PingBankCard"
+            class="w-full h-auto object-contain rounded-3xl md:rotate-[70deg]"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center gap-4 text-center"
+        >
+          <div class="w-20 h-20 p-2 rounded-full bg-rose-800 text-slate-100">
+            <Accounts />
+          </div>
+          <h1 class="text-2xl font-bold md:text-4xl">Centro de Cuentas</h1>
+          <p class="text-base md:text-1xl">
+            Guarda todas tus cuentas en un solo lugar
+          </p>
+
+          <div class="w-20 h-20 p-2 rounded-full bg-rose-800 text-slate-100">
+            <SecurityFunds />
+          </div>
+          <h1 class="text-2xl font-bold md:text-4xl">Fondos de seguridad</h1>
+          <p class="text-base md:text-1xl">
+            Guarde su dinero en instituciones financieras establecidas
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <FeactureSection client:load />
+
+  <section class="flex gap-4 w-full m-auto max-w-[80rem] py-4">
+    <div
+      class="flex flex-col items-center justify-center text-center gap-4 m-auto max-w-[80rem]"
+    >
+      <h1 class="text-2xl font-bold md:text-4xl">
+        Descubre las tarjetas de <span
+          class="text-rose-800 dark:text-emerald-400">Pig Bank</span
+        >
+      </h1>
+
+      <CarouseCard client:load />
+    </div>
+  </section>
+
+  <FooterPB />
+</div>

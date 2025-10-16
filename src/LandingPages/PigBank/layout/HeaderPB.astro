@@ -1,0 +1,37 @@
+---
+import MobileMenu from "../../GlobalComponents/MobileMenu";
+import DarkMode from "../../GlobalComponents/DarkMode";
+---
+
+<div class="w-full h-auto p-4 bg-rose-800">
+  <div
+    class="grid items-center justify-center w-full h-auto grid-cols-2 md:grid-cols-3"
+  >
+    <img
+      src="/Image/PigBank/PigBankLogoNo1.webp"
+      alt="PigBankLogoNo1"
+      class="object-contain w-40 h-40 mx-auto cursor-pointer"
+    />
+
+    <div
+      class="flex p-2 mx-auto text-center bg-slate-100 h-fit w-fit rounded-xl md:order-3"
+    >
+      <DarkMode bgColor="text-rose-800" client:load />
+    </div>
+
+    <div
+      class="flex col-span-2 gap-4 mx-auto text-center bg-slate-100 md:bg-transparent h-fit w-fit rounded-xl md:col-span-1 md:order-2"
+    >
+      <div class="">
+        <MobileMenu
+          textColor="text-black md:text-slate-100 transition-all duration-900 ease-out"
+          hoverColor="hover:text-slate-100 md:hover:text-rose-800"
+          bgColor="hover:bg-rose-800 hover:md:bg-slate-100 transition-all duration-900 ease-out rounded-xl"
+          invertColor="text-rose-800"
+          client:load
+        />
+      </div>
+    </div>
+  </div>
+
+</div>
