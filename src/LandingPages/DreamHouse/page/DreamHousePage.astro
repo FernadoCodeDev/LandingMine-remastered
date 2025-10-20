@@ -1,0 +1,46 @@
+---
+import HeaderDH from "../layout/HeaderDH.astro";
+import FeatureSection from "../layout/FeatureSection.astro";
+import PaginationSection from "../utils/PaginationSection";
+import Process from "../layout/Process.astro";
+import FeatureSectionimg from "../layout/FeatureSectionimg.astro";
+import Homes from "../layout/Homes.astro";
+import FooterDH from "../layout/FooterDH.astro";
+---
+
+<div
+  class="flex flex-col min-h-screen text-zinc-950 bg-slate-100 dark:bg-zinc-950 dark:text-slate-100"
+>
+  <HeaderDH />
+  <FeatureSection />
+
+  <main class="flex p-4 w-full m-auto max-w-[80rem]">
+    <section
+      class="flex flex-col items-center justify-center gap-4 m-auto w-full max-w-[100rem]"
+    >
+      <h1 class="text-2xl font-bold text-center md:text-6xl">
+        Propiedades Populares
+      </h1>
+
+      <p class="text-base text-start md:textlg">
+        brindamos un servicio completo para la venta, compra o alquiler de
+        inmuebles, brindamos un brindamos un servicio completo para la venta.
+      </p>
+
+      <PaginationSection client:load/>
+
+      <button
+        class="flex flex-col font-bold text-center transition-all duration-700 ease-out bg-cyan-400 hover:bg-cyan-600 text-white md:w-1/2 dark:bg-neutral-900 dark:hover:bg-black my-12 p-2 w-full max-w-[70rem] m-auto"
+      >
+        Ver todas
+      </button>
+
+      <Process />
+
+      <FeatureSectionimg />
+      <Homes />
+    </section>
+  </main>
+
+  <FooterDH />
+</div>

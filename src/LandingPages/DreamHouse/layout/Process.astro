@@ -1,0 +1,128 @@
+---
+import HouseSVG from "../assets/svg/HouseSVG";
+import DateSVG from "../assets/svg/DateSVG";
+import PurchaseSVG from "../assets/svg/PurchaseSVG";
+import GuaranteeSVG from "../assets/svg/guaranteeSVG";
+---
+
+<h1 class="text-3xl font-bold text-center md:text-6xl">Cómo funciona</h1>
+
+<div class="flex flex-col items-center justify-center">
+  {/* Desktop Layout */}
+  <div class="relative items-start hidden space-x-8 lg:flex">
+    <div class="relative flex items-center">
+      <div
+        class="flex flex-col items-center justify-center w-56 h-56 p-2 text-center text-white bg-cyan-600"
+      >
+        <HouseSVG width="40" />
+        <h1 class="text-lg font-bold">Explora nuestras propiedades</h1>
+        <p class="text-base">
+          Descubre casas y departamentos que se ajusten a tus necesidades.
+        </p>
+      </div>
+      <div
+        class="absolute w-16 h-1 -translate-y-1/2 bg-gray-400 left-full top-1/2"
+      >
+      </div>
+    </div>
+    <div class="relative flex items-center">
+      <div
+        class="flex flex-col items-center justify-center w-56 h-56 p-2 text-center text-white bg-cyan-600"
+      >
+        <DateSVG width="40" />
+        <h1 class="text-lg font-bold">Agenda una visita</h1>
+        <p class="text-base">
+          Coordina fácilmente un recorrido con nuestros asesores
+        </p>
+      </div>
+      <div
+        class="absolute w-16 h-1 -translate-y-1/2 bg-gray-400 left-full top-1/2"
+      >
+      </div>
+    </div>
+    <div class="relative flex items-center">
+      <div
+        class="flex flex-col items-center justify-center w-56 h-56 p-2 text-center text-white bg-cyan-600"
+      >
+        <PurchaseSVG width="40" />
+        <h1 class="text-lg font-bold">Gestiona tu compra o alquiler</h1>
+        <p class="text-base">
+          Te acompañamos en cada paso del proceso legal y financiero.
+        </p>
+      </div>
+      <div
+        class="absolute w-16 h-1 -translate-y-1/2 bg-gray-400 left-full top-1/2"
+      >
+      </div>
+    </div>
+    <div
+      class="z-10 flex flex-col items-center justify-center w-56 h-56 p-2 text-center text-white bg-cyan-600"
+    >
+      <GuaranteeSVG width="40" />
+      <h1 class="text-lg font-bold">Recibe asesoría postventa</h1>
+      <p class="text-base">
+        Nuestro compromiso continúa incluso después de cerrar el trato.
+      </p>
+    </div>
+  </div>
+
+  {/* Mobile Layout */}
+  <div class="relative grid grid-cols-2 gap-4 lg:hidden">
+    <div class="relative flex items-center justify-center">
+      <div
+        class="flex flex-col items-center justify-center p-2 text-center text-white w-60 h-60 bg-cyan-600"
+      >
+        <HouseSVG width="40" />
+        <h1 class="text-lg font-bold">Explora nuestras propiedades</h1>
+        <p class="text-base">
+          Descubre casas y departamentos que se ajusten a tus necesidades.
+        </p>
+      </div>
+      <div
+        class="absolute w-16 h-1 -translate-y-1/2 bg-gray-400 left-full top-1/2"
+      >
+      </div>
+    </div>
+    <div class="relative flex items-center justify-center">
+      <div
+        class="flex flex-col items-center justify-center p-2 text-center text-white w-60 h-60 bg-cyan-600"
+      >
+        <DateSVG width="40" />
+        <h1 class="text-lg font-bold">Agenda una visita</h1>
+        <p class="text-base">
+          Coordina fácilmente un recorrido con nuestros asesores.
+        </p>
+      </div>
+      <div
+        class="absolute w-1 h-12 -translate-x-1/2 bg-gray-400 top-full left-1/2"
+      >
+      </div>
+    </div>
+    <div class="relative flex items-center justify-center">
+      <div
+        class="flex flex-col items-center justify-center p-2 text-center text-white w-60 h-60 bg-cyan-600"
+      >
+        <GuaranteeSVG width="40" />
+        <h1 class="text-lg font-bold">Gestiona tu compra o alquiler</h1>
+        <p class="text-base">
+          Te acompañamos en cada paso del proceso legal y financiero.
+        </p>
+      </div>
+      <div
+        class="absolute w-16 h-1 -translate-y-1/2 bg-gray-400 left-full top-1/2"
+      >
+      </div>
+    </div>
+    <div class="relative flex items-center justify-center">
+      <div
+        class="flex flex-col items-center justify-center p-2 text-center text-white w-60 h-60 bg-cyan-600"
+      >
+        <PurchaseSVG width="40" />
+        <h1 class="font-bold text-l">Recibe asesoría postventa</h1>
+        <p class="text-base">
+          Nuestro compromiso continúa incluso después de cerrar el trato.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
