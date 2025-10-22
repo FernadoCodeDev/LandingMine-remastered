@@ -1,0 +1,56 @@
+---
+import MobileMenu from "../../GlobalComponents/MobileMenu";
+import DarkMode from "../../GlobalComponents/DarkMode";
+---
+
+<div class="w-full h-auto p-4 bg-slate-100">
+  <div
+    class="grid items-center justify-center w-full h-auto grid-cols-2 md:grid-cols-1"
+  >
+    <img
+      src="/Image/Flashing/flashingLogo.webp"
+      alt="flashingLogo"
+      class="object-contain w-40 h-20 mx-auto cursor-pointer invert"
+    />
+
+    <div class="flex p-2 mx-auto text-center md:hidden">
+      <DarkMode bgColor="text-zinc-950" client:load />
+    </div>
+
+    <div
+      class="flex col-span-2 gap-4 mx-auto text-center md:hidden md:bg-transparent h-fit w-fit rounded-xl md:col-span-1 md:order-2"
+    >
+      <div class="">
+        <MobileMenu
+          textColor="text-zinc-950 transition-all duration-900 ease-out"
+          hoverColor="hover:text-orange-400 "
+          bgColor=""
+          invertColor="text-zinc-950"
+          client:load
+        />
+      </div>
+    </div>
+
+    <!-- md -->
+
+    <div class="flex-row hidden md:flex">
+      <div
+        class="flex col-span-2 gap-4 mx-auto text-center md:bg-transparent h-fit w-fit rounded-xl"
+      >
+        <div class="">
+          <MobileMenu
+            textColor="text-zinc-950 transition-all duration-900 ease-out"
+            hoverColor="hover:text-orange-400 "
+            bgColor=""
+            invertColor="text-zinc-950"
+            client:load
+          />
+        </div>
+      </div>
+
+      <div class="flex p-2 mx-auto text-center">
+        <DarkMode bgColor="text-zinc-950" client:load />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+---
+import HeaderFL from "../layout/HeaderFL.astro";
+import Background from "../layout/Background.astro";
+import EventsCatalog from "../layout/EventsCatalog.astro";
+import EventsHeld from "../layout/EventsHeld.astro";
+import Contact from "../layout/Contact.astro";
+import FooterFL from "../layout/FooterFL.astro";
+---
+
+<div
+  class="flex flex-col min-h-screen text-zinc-950 bg-slate-100 dark:bg-zinc-950 dark:text-slate-100"
+>
+  <HeaderFL />
+  <Background />
+
+  <main class="flex p-4 w-full m-auto max-w-[80rem]">
+    <section
+      class="relative flex flex-col items-center justify-center gap-8 m-auto w-full max-w-[100rem]"
+    >
+      <div
+        class="absolute left-1/2 top-0 z-50 translate-x-[-50%] translate-y-[-50%] md:translate-y-[-80%] grid grid-cols-2 md:grid-cols-5 items-start justify-start gap-4 p-6 bg-slate-100 dark:bg-zinc-950 rounded-xl w-[90%] max-w-[80rem]"
+      >
+        <h1 class="col-span-2 text-lg text-center md:col-span-1 md:text-left">
+          Más de una década creando <span class="font-bold"
+            >momentos inolvidables</span
+          >
+        </h1>
+
+        <div class="flex flex-col gap-2 text-center">
+          <h1 class="text-xl font-bold">
+            <span class="text-orange-500">+</span>5,000
+          </h1>
+          <p class="text-base">Asistentes en eventos masivos</p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-center">
+          <h1 class="text-xl font-bold">
+            <span class="text-orange-500">+</span>250
+          </h1>
+          <p class="text-base">Convenciones y festivales organizados</p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-center">
+          <h1 class="text-xl font-bold">
+            <span class="text-orange-500">+</span>100
+          </h1>
+          <p class="text-base">Artistas y figuras que confiaron en nosotros</p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-center">
+          <h1 class="text-xl font-bold">
+            98<span class="text-orange-500">%</span>
+          </h1>
+          <p class="text-base">Clientes satisfechos con nuestros eventos</p>
+        </div>
+      </div>
+
+      <EventsCatalog />
+      <EventsHeld />
+      <Contact />
+    </section>
+  </main>
+
+  <FooterFL />
+</div>
