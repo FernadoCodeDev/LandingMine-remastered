@@ -1,0 +1,26 @@
+---
+import HeaderM from "../layout/HeaderM.astro";
+import PaginationSection from "../utils/PaginationSection";
+import FooterM from "../layout/FooterM.astro";
+---
+
+<div
+  class="flex flex-col min-h-screen text-zinc-950 dark:text-slate-100 bg-slate-100 dark:bg-zinc-950"
+>
+  <HeaderM />
+
+  <main class="flex p-4 w-full m-auto max-w-[80rem]">
+    <section class="flex flex-col gap-4">
+      <h1 class="text-xl font-bold md:text-2xl text-star">Autos</h1>
+      <p class="text-base md:text-lg text-start max-w-[40rem]">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s,
+      </p>
+
+      <PaginationSection client:load />
+    </section>
+  </main>
+
+  <FooterM />
+</div>
