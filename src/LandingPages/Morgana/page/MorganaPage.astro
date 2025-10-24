@@ -1,6 +1,8 @@
 ---
 import HeaderM from "../layout/HeaderM.astro";
 import PaginationSection from "../utils/PaginationSection";
+import Promotion from "../layout/Promotion.astro";
+import Details from "../layout/Details.astro";
 import FooterM from "../layout/FooterM.astro";
 ---
 
@@ -13,12 +15,15 @@ import FooterM from "../layout/FooterM.astro";
     <section class="flex flex-col gap-4">
       <h1 class="text-xl font-bold md:text-2xl text-star">Autos</h1>
       <p class="text-base md:text-lg text-start max-w-[40rem]">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s,
+        Explora nuestra selección exclusiva de vehículos Morgana. Desde la
+        potencia eléctrica hasta el confort familiar, encuentra el auto que se
+        adapta a tu estilo de vida y forma de conducir.
       </p>
 
       <PaginationSection client:load />
+
+      <Promotion />
+      <Details />
     </section>
   </main>
 
