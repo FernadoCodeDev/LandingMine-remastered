@@ -4,6 +4,7 @@ import FeatureSection from "../layout/FeatureSection.astro";
 import RightSliderSection from "../utils/RightSliderSection.astro";
 import LeftSliderSection from "../utils/LeftSliderSection.astro";
 import FeatureSectionImg from "../layout/FeatureSectionImg.astro";
+import Package from "../components/ui/Packages";
 
 import FooterShinrai from "../layout/FooterShinrai.astro";
 ---
@@ -16,30 +17,56 @@ import FooterShinrai from "../layout/FooterShinrai.astro";
   <FeatureSection />
   <main class="flex p-4 w-full m-auto max-w-[80rem]">
     <section class="flex flex-col gap-4">
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div class="flex flex-col items-start justify-start">
-          <h3 class="text-sm md:text-lg text-emerald-800 dark:text-beige-400">Lorem ipsum</h3>
-          <h1 class="text-lg md:text-xl">Lorem ipsum dolor sit</h1>
-          <div class="w-8 h-1 mt-2 mb-4 rounded-full bg-emerald-800 dark:bg-beige-400"></div>
-
+      <div class="grid grid-cols-1 gap-8 py-16 md:grid-cols-2">
+        <div class="flex flex-col items-start justify-start gap-2">
+          <h3 class="text-sm md:text-lg text-emerald-800 dark:text-beige-400">
+            El camino de la confianza
+          </h3>
+          <h1 class="text-lg md:text-xl">
+            <span class="font-bold">Shinrai</span>
+            una escuela de Karate para el cuerpo, la mente y el espíritu
+          </h1>
+          <div
+            class="w-8 h-1 mt-2 mb-4 rounded-full bg-emerald-800 dark:bg-beige-400"
+          >
+          </div>
 
           <p class="text-base md:text-lg">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem excepturi nulla iusto consectetur mollitia minima,
-            tempora adipisci sed impedit hic eum consequatur facilis tenetur
-            porro perspiciatis soluta amet praesentium
+            En <span class="font-bold">Shinrai</span> enseñamos el verdadero significado
+            del Karate: una disciplina que busca equilibrio, respeto y autocontrol.
+            Nuestro objetivo es formar personas seguras de sí mismas, capaces de
+            defenderse sin recurrir a la violencia.
+          </p>
+
+          <p class="text-base md:text-lg">
+            Como su nombre lo indica, <span class="font-bold">Shinrai</span> representa
+            la
+            <span class="font-bold">confianza</span>, esa fuerza interior que se
+            construye con práctica, paciencia y humildad.
+          </p>
+          <p class="text-base md:text-lg">
+            Encontrando valor en la tranquilidad, se encuentra la paz.
           </p>
         </div>
 
-        <img src="/Image/Shinrai/img11.webp" alt="alt" class="object-cover w-full h-full">
+        <img
+          src="/Image/Shinrai/img11.webp"
+          alt="alt"
+          class="object-cover w-full h-full"
+        />
       </div>
-
+  
       <LeftSliderSection />
-      <RightSliderSection />
+      <RightSliderSection /> 
+   
     </section>
   </main>
 
   <FeatureSectionImg />
+
+  <section class="flex flex-col gap-4 p-4 w-full m-auto max-w-[80rem]">
+    <Package client:load />
+  </section>
 
   <FooterShinrai />
 </div>
