@@ -1,0 +1,63 @@
+---
+import Modal from "../components/ui/Modal";
+---
+
+<div class="relative flex flex-col items-center justify-center">
+  <div
+    class="absolute inset-0 w-full h-auto bg-center bg-cover"
+    style={{
+      backgroundImage: `url(/Image/GoldTeeth/Background.webp)`,
+    }}
+  >
+  </div>
+
+  <dv
+    class="relative flex flex-col items-center justify-center gap-4 py-8 text-center text-slate-100"
+  >
+    {/*Content */}
+    <div
+      class="flex flex-col md:flex-row justify-center m-auto gap-8 p-4 max-w-[80rem]"
+    >
+      <div class="items-center justify-center hidden grid-cols-2 gap-2 md:grid">
+        <div class="flex flex-col items-end gap-2">
+          <img
+            src="/Image/GoldTeeth/img1.webp"
+            alt="alt"
+            class="object-contain rounded-t-full w-60 h-60"
+          />
+          <img
+            src="/Image/GoldTeeth/img2.webp"
+            alt="alt"
+            class="object-contain rounded-b-full w-60 h-60"
+          />
+        </div>
+        <div class="flex">
+          <img
+            src="/Image/GoldTeeth/img3.webp"
+            alt="alt"
+            class="object-contain rounded-t-full w-60 h-60"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center gap-2">
+        <h1 class="text-4xl font-bold text-start lg:text-8xl">Sonríe mejor</h1>
+        <h1 class="text-4xl font-bold text-start lg:text-8xl">con nosotros</h1>
+
+        <div class="flex flex-col gap-2">
+          <p class="text-base max-w-[25rem] text-center md:text-lg">
+            Nos dedicamos a brindarle a usted y a su familia atención dental de
+            máxima calidad en un entorno cómodo y acogedor.
+          </p>
+
+            <Modal client:load/>
+
+          <div>
+            <p class="">⭐⭐⭐⭐⭐(4.8)</p>
+            <p class="">30K+Calificaciones en Google</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dv>
+</div>
