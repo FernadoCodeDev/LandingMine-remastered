@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Close from "../../assets/svg/Close";
+import Close from "../../../SVGGlobal/Close";
 import InternationalPayment from "../../assets/svg/InternationalPayment";
 import Security from "../../assets/svg/Security";
 import Cashback from "../../assets/svg/Cashback";

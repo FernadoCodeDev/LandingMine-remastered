@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Close from "../../assets/svg/Close";
+import Close from "../../../SVGGlobal/Close";
+
 const FormModal = () => {
     const [isOpen, setIsOpen] = useState(false);
 

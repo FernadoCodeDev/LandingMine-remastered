@@ -1,5 +1,5 @@
 import React from "react";
-import Close from "../../assets/svg/Close";
+import Close from "../../../SVGGlobal/Close";
 
 export const Customers = [
   {

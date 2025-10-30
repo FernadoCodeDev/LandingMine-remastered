@@ -1,5 +1,5 @@
 import React from "react";
-import Close from "../../assets/svg/close";
+import Close from "../../../SVGGlobal/Close";
 import LeftHaf from "../../assets/svg/LeftHaf";
 import Circle from "../../assets/svg/Circle";
 import RightHalf from "../../assets/svg/RightHalf";
