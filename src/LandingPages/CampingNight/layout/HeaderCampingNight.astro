@@ -1,0 +1,81 @@
+---
+import MobileMenu from "../../GlobalComponents/MobileMenu";
+import DarkMode from "../../GlobalComponents/DarkMode";
+import Modal from "../components/ui/Modal";
+---
+
+<div class="relative w-full h-dvh">
+  <div
+    class="relative inset-0 flex flex-col w-full bg-fixed bg-center bg-cover h-dvh"
+    style={{
+      backgroundImage: `url(/Image/CampingNight/Background.webp)`,
+    }}
+  >
+    <div
+      class="absolute bottom-0 left-0 flex flex-col items-center justify-center w-full h-full bg-black/60"
+    >
+    </div>
+
+    <div
+      class="relative flex text-slate-100 flex-col px-8 pt-12 pb-28 items-center h-full justify-between w-full m-auto max-w-[100rem]"
+    >
+      <div
+        class="grid items-center justify-center w-full h-auto grid-cols-2 gap-4 md:max-h-40 md:grid-cols-3"
+      >
+        <div class="flex justify-start md:justify-center md:order-2">
+          <img
+            src="/Image/CampingNight/CampingNightLogo.webp"
+            alt="CampingNightLogo"
+            class="object-contain w-40 h-auto cursor-pointer md:w-60"
+          />
+        </div>
+
+        <div
+          class="md:order-1 hidden md:flex items-center justify-center bg-black/20 md:bg-transparent md:backdrop-blur-[0px] backdrop-blur-[2px] rounded-lg"
+        >
+          <MobileMenu
+            textColor="text-slate-100 transition-all duration-900 ease-out"
+            hoverColor="hover:text-beige-300"
+            bgColor=""
+            invertColor="text-white"
+            client:load
+          />
+        </div>
+
+        <div class="flex justify-end md:order-3">
+          <DarkMode bgColor="text-slate-100" client:load />
+        </div>
+
+        <div
+          class="md:hidden w-fit mx-auto col-span-2 border-slate-100 border-2 backdrop-blur-[4px] rounded-lg"
+        >
+          <MobileMenu
+            textColor="text-slate-100 transition-all duration-900 ease-out"
+            hoverColor="hover:text-beige-400"
+            bgColor=""
+            invertColor="text-white"
+            client:load
+          />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center justify-center max-w-3xl gap-6 mx-auto text-center md:flex-1"
+      >
+         <h1 class="text-4xl text-white md:text-6xl lg:text-7xl">
+            Un lugar para acampar, donde la tranquilidad reina, y un{" "}
+            <span class="font-bold">S'more </span>
+            caliente siempre te espera
+          </h1>
+          <Modal client:load/>
+      </div>
+
+     
+    </div>
+
+     <div
+        class="absolute bottom-0 left-0 w-full h-32 bg-slate-100 dark:bg-zinc-950 diagonal-clip-3"
+      >
+      </div>
+  </div>
+</div>
