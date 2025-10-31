@@ -1,6 +1,8 @@
 ---
 import HeaderCampingNight from "../layout/HeaderCampingNight.astro";
-
+import Carousel from "../components/ui/Carousel";
+import FeatureSection from "../layout/FeatureSection.astro";
+import Details from "../layout/Details.astro";
 import FooterCampingNight from "../layout/FooterCampingNight.astro";
 ---
 
@@ -15,12 +17,16 @@ import FooterCampingNight from "../layout/FooterCampingNight.astro";
         class="grid items-center justify-center grid-cols-1 gap-4 md:grid-cols-2"
       >
         <div class="flex flex-col items-center justify-center gap-4">
-          <h1 class="text-lg font-bold md:text-xl">Lorem ipsum dolor</h1>
+          <h1 class="text-lg font-bold md:text-xl">
+            Descubre la magia de acampar con Camping Night
+          </h1>
           <p class="text-base md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            veniam delectus odit, eveniet eligendi repellendus libero fuga
-            fugiat adipisci labore enim voluptatum nisi, magni ab sapiente sequi
-            voluptatibus totam temporibus!
+            Escapa de la rutina y sumérgete en la tranquilidad de la naturaleza.
+            En Camping Night, te ofrecemos un refugio perfecto para
+            desconectarte, disfrutar de la aventura y relajarte bajo un cielo
+            estrellado. Ya sea que prefieras una fogata acogedora, explorar
+            senderos naturales o simplemente contemplar el amanecer desde tu
+            tienda, aquí encontrarás el lugar ideal para tu próxima escapada.
           </p>
         </div>
 
@@ -30,8 +36,16 @@ import FooterCampingNight from "../layout/FooterCampingNight.astro";
           class="object-cover w-full h-full"
         />
       </div>
+
+      <Carousel client:load />
     </section>
   </main>
 
-  <FooterCampingNight />
+  <FeatureSection />
+
+  <section class="flex p-4 pt-20 pb-36 w-full m-auto max-w-[80rem]">
+    <Details />
+  </section>
 </div>
+
+<FooterCampingNight />
