@@ -17,25 +17,25 @@ import Search from "../assets/svg/Search";
     </div>
 
     <div
-      class="relative flex flex-col px-8 py-12 items-center h-full justify-between w-full m-auto max-w-[100rem]"
+      class="relative flex flex-col px-8 py-8 items-center h-full justify-between w-full m-auto max-w-[100rem]"
     >
       <div
-        class="grid items-center justify-center w-full h-auto grid-cols-2 gap-4 md:hidden"
+        class="grid items-center justify-center w-full h-auto grid-cols-3 gap-4 md:hidden"
       >
-        <div class="flex justify-start md:justify-center">
+        <div class="flex justify-start order-1 md:justify-center">
           <img
             src="/Image/Morgana/MorganaLogo.webp"
             alt="MorganaLogo"
-            class="object-contain w-40 h-auto cursor-pointer invert"
+            class="object-contain w-40 h-auto cursor-pointer invert "
           />
         </div>
 
-        <div class="flex justify-end">
+        <div class="flex justify-center order-3">
           <DarkMode bgColor="text-slate-100" client:load />
         </div>
 
         <div
-          class="relative flex justify-center w-full col-span-2 m-auto md:hidden"
+          class="relative flex justify-center order-2 w-full m-auto md:hidden"
         >
           <input
             type="text"
@@ -51,7 +51,7 @@ import Search from "../assets/svg/Search";
         </div>
 
         <div
-          class="md:hidden w-fit mx-auto col-span-3 border-slate-100 border-2 backdrop-blur-[4px] rounded-lg"
+          class="md:hidden w-fit mx-auto order-4 col-span-3 border-slate-100 border-2 backdrop-blur-[4px] rounded-lg"
         >
           <MobileMenu
             textColor="text-slate-100 transition-all duration-900 ease-out"
@@ -110,33 +110,19 @@ import Search from "../assets/svg/Search";
       </div>
 
       <div
-        class="flex flex-col items-center justify-center w-full max-w-3xl gap-4 mx-auto text-start md:flex-1"
+        class="flex flex-col items-center justify-center w-full max-w-3xl gap-2 mx-auto text-start md:flex-1"
       >
         <h1 class="text-3xl font-bold text-center md:text-6xl">
           Maneja con confianza, maneja con Morgana
         </h1>
 
-        <p class="text base md:text-lg">
+        <p class="text-sm md:text-base">
           Ya sea que busques comprar el auto de tus sueños o rentar uno para una
           ocasión especial, en <span class="font-bold">Morgana</span> encontrarás
           variedad, precios competitivos y un servicio excepcional. Nos apasiona
           ayudarte a encontrar el vehículo perfecto para cada etapa de tu vida.
         </p>
 
-         <div class="flex flex-row w-full gap-4">
-        <button
-          class="w-full p-4 text-base font-bold text-center transition-all duration-700 ease-out rounded-lg bg-slate-100 text-zinc-950 hover:bg-slate-300"
-        >
-          Lorem
-        </button>
-
-        <button
-          class="w-full p-4 text-base font-bold text-center transition-all duration-700 ease-out bg-transparent border rounded-lg border-slate-100 text-slate-100 hover:bg-slate-100 hover:text-zinc-950"
-        >
-        Lorem
-          
-        </button>
-      </div>
       </div>
     </div>
   </div>

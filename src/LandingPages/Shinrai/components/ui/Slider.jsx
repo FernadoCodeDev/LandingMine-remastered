@@ -39,9 +39,9 @@ export default function Slider() {
   const rightIndex = (index + 1) % cards.length;
 
   return (
-    <div className="w-full py-8 overflow-hidden">
+    <div className="w-full overflow-hidden">
       <div className="relative flex items-center justify-center w-full">
-        <div className="grid items-center justify-center w-full grid-cols-3 gap-4 h-60 md:h-auto">
+        <div className="grid items-center justify-center w-full grid-cols-3 gap-2 h-60 md:h-auto">
 
           <div className="relative flex items-center justify-end w-full h-full overflow-hidden">
             <img
