@@ -1,6 +1,6 @@
 import React from "react";
 import Location from "../assets/svg/Location";
-import Floors from "../assets/svg/floors";
+import Floors from "../assets/svg/Floors";
 import SquareMeasument from "../assets/svg/SquareMeasument";
 import Currency from "../assets/svg/Currency";
 
