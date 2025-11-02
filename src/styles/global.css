@@ -3,7 +3,7 @@
 @tailwind utilities;
 
     .diagonal-clip {
-        clip-path: polygon(0 100%, 100% 0, 100% 100%);
+        clip-path: polygon(0 88%, 100% 50%, 100% 100%, 0 100%);
     }
 
     .diagonal-clip-2 {
@@ -14,4 +14,6 @@
         clip-path: polygon(52% 56%, 100% 25%, 100% 48%, 100% 100%, 0 100%, 0 52%, 30% 24%);
     }
 
-
+        .diagonal-clip-4 {
+        clip-path: polygon(0 0, 100% 0%, 100% 10%, 0 50%);
+    }
