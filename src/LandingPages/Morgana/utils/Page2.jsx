@@ -1,5 +1,5 @@
 import React from "react";
-import TypeOfCar from "../assets/svg/typeOfCar"
+import TypeOfCar from "../assets/svg/typeOfCar";
 
 export default function Page2() {
   return (
