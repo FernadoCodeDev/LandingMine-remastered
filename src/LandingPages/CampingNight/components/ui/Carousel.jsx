@@ -97,7 +97,7 @@ export default function Slider() {
                             />
 
                             <div
-                                class="absolute w-full h-full bottom-0 left-0 flex flex-col text-center items-center rounded-xl justify-center gap-2 bg-black/60 p-4 m-auto text-slate-100 z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300"
+                                class="absolute w-full h-full bottom-0 left-0 flex flex-col text-center items-center rounded-xl justify-center gap-2 bg-black/60 p-4 m-auto text-slate-100 z-10 opacity-100 xl:opacity-0 xl:group-hover:opacity-100 transition-all duration-300"
                             >
                                 <h1 className="text-xl font-bold md:text-2xl">{pkg.title}</h1>
                                 <p className="text-base">
