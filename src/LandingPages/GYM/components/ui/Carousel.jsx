@@ -117,19 +117,19 @@ export default function Slider() {
                     return (
                         <div
                             key={pkg.id}
-                            className={`transition-all duration-700 ease-in-out ${position === "center"
+                            className={`transition-all duration-700  ease-in-out ${position === "center"
                                 ? "opacity-100 scale-100"
-                                : "opacity-20 scale-90 hidden md:block "
-                                } flex flex-col gap-2  bg-slate-200 dark:bg-slate-900 p-4 rounded-xl shadow text-center`}
+                                : "opacity-20 scale-90 hidden md:flex flex-col justify-between items-center  "
+                                } flex flex-col justify-between items-center  h-full bg-slate-200 dark:bg-slate-900 p-4 rounded-xl shadow text-center`}
                         >
-                            <h1 className="text-lg font-bold md:text-xl">{pkg.title}</h1>
+                            <h1 className="mb-4 text-lg font-bold md:text-xl">{pkg.title}</h1>
                             <img
                                 src={pkg.image}
                                 alt={pkg.title}
-                                className="w-40 h-auto p-2 mx-auto"
+                                className="w-40 h-auto p-2 mx-auto mb-4"
                             />
-                            <h2 className="text-lg font-bold md:text-xl">{pkg.price}</h2>
-                            <div className="">
+                            <h2 className="mb-4 text-lg font-bold md:text-xl">{pkg.price}</h2>
+                            <div className="mb-4">
                                 {pkg.details.map((d, idx) => (
                                     <p key={idx} className="text-start">
                                         {d}
@@ -137,7 +137,7 @@ export default function Slider() {
                                 ))}
                             </div>
                             <button
-                                className={`transition-all duration-700 ease-out w-full font-semibold text-lg lg:text-xl p-4 text-black bg-yellow-300 rounded-xl
+                                className={`transition-all mb-4 duration-700 ease-out w-full font-semibold text-lg lg:text-xl p-4 text-black bg-yellow-300 rounded-xl
                     ${position === "center"
                                         ? "hover:bg-yellow-500 cursor-pointer"
                                         : "cursor-default"
